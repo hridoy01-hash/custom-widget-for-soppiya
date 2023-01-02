@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .cw001_universal * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--themeFont);
+        } */
+
+        /* body {
+            margin: 0;
+        } */
+
+        /*  .cw001_container {
+            max-width: 1360px;
+            padding: 0px 20px;
+            margin: 0 auto;
+        } */
+
+        /*  .cw001_brand_img_wrapper {
+            background-color: #F9F9F9;
+        } */
+
+        /*  .cw001_brand_single_img img {
+            width: 100%;
+            height: 100%;
+            max-width: 105px;
+            max-height: 80px;
+            opacity: .5;
+            filter: grayscale(100%);
+            transition: filter .3s ease, opacity .3s ease;
+        } */
+
+        /* .cw001_brand_img_list_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 35px;
+            background-color: #F9F9F9;
+            padding: 20px 30px;
+        } */
+
+        /* .cw001_brand_single_img {
+            cursor: pointer;
+        } */
+
+        /*  .cw001_brand_img_wrapper::-webkit-scrollbar {
+            display: none;
+        } */
+
+        /* .cw001_brand_single_img:hover.cw001_brand_single_img img {
+            opacity: 1;
+            filter: grayscale(0);
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="cw001_brand_img_wrapper cw001_universal" style="
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+
+    ">
+        <div class="cw001_container" style="
+        max-width: 1360px;
+        padding: 0px 20px;
+        margin: 0 auto;
+        ">
+            <div class="cw001_brand_img_list_container" style="
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 35px;
+            background-color: #F9F9F9;
+            padding: 20px 30px;
+            ">
+                <div class="cw001_brand_single_img" style="cursor: pointer;">
+                    <img class="brand_img_common" style="
+            width: 100%;
+            height: 100%;
+            max-width: 105px;
+            max-height: 80px;
+            opacity: .5;
+            filter: grayscale(100%);
+            transition: filter .3s ease, opacity .3s ease;
+                    " src="https://i.ibb.co/KNPWSZD/Epson.jpg" alt="">
+                </div>
+                <div class="cw001_brand_single_img" style="cursor: pointer;">
+                    <img class="brand_img_common" style="
+                    width: 100%;
+                    height: 100%;
+                    max-width: 105px;
+                    max-height: 80px;
+                    opacity: .5;
+                    filter: grayscale(100%);
+                    transition: filter .3s ease, opacity .3s ease;
+                            " src="https://i.ibb.co/7zG8CNg/Amida.jpg" alt="">
+                </div>
+                <div class="cw001_brand_single_img" style="cursor: pointer;">
+                    <img class="brand_img_common" style="
+                    width: 100%;
+                    height: 100%;
+                    max-width: 105px;
+                    max-height: 80px;
+                    opacity: .5;
+                    filter: grayscale(100%);
+                    transition: filter .3s ease, opacity .3s ease;
+                            " src="https://i.ibb.co/ScDTsCq/samsung.jpg" alt="">
+                </div>
+                <div class="cw001_brand_single_img" style="cursor: pointer;">
+                    <img class="brand_img_common" style="
+                    width: 100%;
+                    height: 100%;
+                    max-width: 105px;
+                    max-height: 80px;
+                    opacity: .5;
+                    filter: grayscale(100%);
+                    transition: filter .3s ease, opacity .3s ease;
+                            " src="https://i.ibb.co/sjnChpP/canon.jpg" alt="">
+                </div>
+                <div class="cw001_brand_single_img" style="cursor: pointer;">
+                    <img class="brand_img_common" style="
+                    width: 100%;
+                    height: 100%;
+                    max-width: 105px;
+                    max-height: 80px;
+                    opacity: .5;
+                    filter: grayscale(100%);
+                    transition: filter .3s ease, opacity .3s ease;
+                            " src="https://i.ibb.co/GHKKJSR/Dell.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const brand_img_common = document.querySelectorAll(".brand_img_common");
+        for (const brand_img of brand_img_common) {
+            brand_img.addEventListener("mouseover", function () {
+                brand_img.style.filter = "grayscale(0)";
+                brand_img.style.opacity = `1`;
+            });
+            brand_img.addEventListener("mouseout", function () {
+                brand_img.style.filter = "grayscale(100%)";
+                brand_img.style.opacity = `0.5`;
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>
